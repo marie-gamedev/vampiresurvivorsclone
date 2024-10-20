@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://iinntiy7glr"
+path="res://.godot/imported/skilltreeitemClickMask.png-85c68b9b4e72ec2f56b88cecf74b64d0.res"
+
+[deps]
+
+source_file="res://SkillTree/skilltreeitemClickMask.png"
+dest_files=["res://.godot/imported/skilltreeitemClickMask.png-85c68b9b4e72ec2f56b88cecf74b64d0.res"]
+
+[params]
+
+create_from=1
+threshold=0.5

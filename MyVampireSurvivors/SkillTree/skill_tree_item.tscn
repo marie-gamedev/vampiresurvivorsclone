@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://g20u7hb77taa"]
+
+[ext_resource type="Texture2D" uid="uid://vdcq63dqa5ay" path="res://SkillTree/skilltreeitem.png" id="1_cb5cr"]
+[ext_resource type="Texture2D" uid="uid://colpqgkke6o45" path="res://SkillTree/amoguscat..png" id="2_2swnr"]
+[ext_resource type="Script" path="res://SkillTree/SkillTreeItem.cs" id="2_27wtu"]
+[ext_resource type="BitMap" uid="uid://iinntiy7glr" path="res://SkillTree/skilltreeitemClickMask.png" id="2_wj6ib"]
+[ext_resource type="PackedScene" uid="uid://cpgpqv2e01i0l" path="res://SkillTree/skill_info_pop_up.tscn" id="4_xvwrd"]
+
+[node name="SkillTreeItem" type="TextureButton"]
+modulate = Color(0, 0, 0, 0.556863)
+top_level = true
+offset_right = 50.0
+offset_bottom = 50.0
+scale = Vector2(5, 5)
+pivot_offset = Vector2(25, 25)
+texture_normal = ExtResource("1_cb5cr")
+texture_click_mask = ExtResource("2_wj6ib")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("2_27wtu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 45.0
+offset_bottom = 45.0
+texture = ExtResource("2_2swnr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SkillInfoPopUp" parent="." instance=ExtResource("4_xvwrd")]
+layout_mode = 1
+offset_left = 48.0
+offset_top = -10.0
+offset_right = 213.95
+offset_bottom = 33.05

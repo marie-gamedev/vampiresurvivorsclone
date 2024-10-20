@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgpato8trtma3"]
+
+[ext_resource type="Script" path="res://SkillTree/Skills/Attack.cs" id="1_bnyu3"]
+[ext_resource type="AudioStream" uid="uid://df03pqgsl1tkf" path="res://Audio/SoundEffect/ice.wav" id="2_1y6g1"]
+[ext_resource type="Texture2D" uid="uid://colpqgkke6o45" path="res://SkillTree/amoguscat..png" id="2_i6jgh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dre6p"]
+size = Vector2(27, 25)
+
+[node name="Attack" type="Area2D" groups=["attack"]]
+script = ExtResource("1_bnyu3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.064, 0.064)
+texture = ExtResource("2_i6jgh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_dre6p")
+
+[node name="LifeTimeTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 10.0
+autostart = true
+
+[node name="snd_play" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_1y6g1")
+volume_db = -10.0
+autoplay = true

@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci8gp00m12tq6"]
+
+[ext_resource type="Script" path="res://SkillTree/Skills/SkillSpawn.cs" id="1_6g0an"]
+
+[node name="SkillSpawn" type="Node2D"]
+script = ExtResource("1_6g0an")
+
+[node name="AttackCooldown" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 1.5
+autostart = true
+
+[node name="AmmunitionCooldown" type="Timer" parent="AttackCooldown"]
+unique_name_in_owner = true
+wait_time = 0.075

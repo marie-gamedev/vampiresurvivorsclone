@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtx4orxcb3gob"]
+
+[ext_resource type="Script" path="res://SkillTree/SkillTree.cs" id="2_gue1n"]
+[ext_resource type="PackedScene" uid="uid://g20u7hb77taa" path="res://SkillTree/skill_tree_item.tscn" id="3_3pwow"]
+
+[node name="SkillTree" type="ColorRect"]
+modulate = Color(1, 1, 1, 0.788235)
+offset_right = 641.0
+offset_bottom = 361.0
+color = Color(0.109804, 0.0901961, 0.129412, 0.647059)
+script = ExtResource("2_gue1n")
+
+[node name="IceSpea" parent="." instance=ExtResource("3_3pwow")]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 167.0
+offset_right = 292.0
+offset_bottom = 217.0
+
+[node name="Collect" parent="." instance=ExtResource("3_3pwow")]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 147.0
+offset_right = 460.0
+offset_bottom = 197.0
+
+[node name="magiccircle" parent="." instance=ExtResource("3_3pwow")]
+layout_mode = 0
+offset_left = 337.0
+offset_top = 257.0
+offset_right = 387.0
+offset_bottom = 307.0

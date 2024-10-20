@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bqix0ae72c1qy"]
+
+[ext_resource type="PackedScene" uid="uid://bgpato8trtma3" path="res://SkillTree/Skills/attack.tscn" id="1_2a3y6"]
+[ext_resource type="Texture2D" uid="uid://d3dgl3sqyiw8e" path="res://SkillTree/SkillEffects/garlic.png" id="2_1rgjt"]
+[ext_resource type="Script" path="res://SkillTree/Skills/Garlic.cs" id="2_b504y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t22ds"]
+radius = 35.5879
+
+[node name="Garlic" instance=ExtResource("1_2a3y6")]
+script = ExtResource("2_b504y")
+
+[node name="Sprite2D" parent="." index="0"]
+scale = Vector2(0.0266, 0.0266)
+texture = ExtResource("2_1rgjt")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+shape = SubResource("CircleShape2D_t22ds")
+
+[node name="LifeTimeTimer" parent="." index="2"]
+autostart = false

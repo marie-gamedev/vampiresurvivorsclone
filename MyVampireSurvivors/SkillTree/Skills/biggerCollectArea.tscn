@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://onh7cvsu10mt"]
+
+[ext_resource type="PackedScene" uid="uid://bgpato8trtma3" path="res://SkillTree/Skills/attack.tscn" id="1_ydl5y"]
+
+[node name="Attack" instance=ExtResource("1_ydl5y")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = null
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 0)
+shape = null
+
+[node name="LifeTimeTimer" parent="." index="2"]
+wait_time = 1e+08
+
+[node name="snd_play" parent="." index="3"]
+stream = null

@@ -1,0 +1,32 @@
+{
+	"icespear": {
+		"Name": "Ice Spear",
+		"Type": "Single Attack",
+		"Damage": "200",
+		"ScenePath": "res://SkillTree/Skills/ice_spear.tscn",
+		"IconPath": "res://SkillTree/SkillIcons/ice_spear.png",
+		"SpawnOnlyOnce": "False",
+		"CooldownTime": "1.5",
+		"AmmoCooldownTime": "0.075"
+	},
+	"attractorb": {
+		"Name": "Attract Orb",
+		"Type": "Stat Boost",
+		"Damage": "N/A",
+		"ScenePath": "res://SkillTree/Skills/biggerCollectArea.tscn",
+		"IconPath": "res://SkillTree/SkillIcons/attract_orb.jpg",
+		"SpawnOnlyOnce": "True",
+		"CooldownTime": "N/A",
+		"AmmoCooldownTime": "N/A"
+	},
+	"MagicCircle": {
+		"Name": "Dark Magic Circle",
+		"Type": "Spawnable",
+		"Damage": "200",
+		"ScenePath": "res://SkillTree/Skills/magic_circle.tscn",
+		"IconPath": "res://SkillTree/SkillEffects/magicCircle.png",
+		"SpawnOnlyOnce": "False",
+		"CooldownTime": "10",
+		"AmmoCooldownTime": "1"
+	}
+}
